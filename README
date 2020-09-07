@@ -1,0 +1,47 @@
+This README file contains information on the contents of the
+iris cluster board layer.
+
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/meta-openembedded
+  branch: jethro
+
+  URI: git://github.com/meta-qt5/meta-qt5.git
+  layers: meta-ruby
+  branch: jethro
+
+  URI: git://git.yoctoproject.org/meta-fsl-arm
+  branch: jethro
+
+
+Table of Contents
+=================
+
+  I. Adding the meta-iris layer to your build
+ II. Adding custom uboot recipes & custom kernel recipes
+III. Adding custom patches for uboot & kernel
+
+
+I. Adding the meta-iris layer to your build
+=================================================
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the meta-iris layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the meta-iris layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-yocto \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-iris \
+    "
