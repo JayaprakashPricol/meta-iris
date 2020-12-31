@@ -2,5 +2,5 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 SRC_URI_append = " \
-           file://uboot-imxv2015.04_4.1.15_1.0.0_ga.patch \
+           file://0001-uboot-imx-production-mfg-enabled-3.14.28.1.0.ga.patch \
 "
