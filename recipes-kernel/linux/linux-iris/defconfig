@@ -32,7 +32,7 @@ CONFIG_VMSPLIT_1G=y
 CONFIG_PREEMPT=y
 CONFIG_AEABI=y
 CONFIG_CMA=y
-CONFIG_CMDLINE="console=ttymxc0,115200 lpj=30000 root=/dev/mmcblk1p2 rootfstype=ext4 rootwait rw quiet silent=1 psplash=false maxcpus=1 consoleblank=0 vt.global_cursor_default=0 video=mxcfb0:dev=ldb,if=RGB24 video=mxcfb1:off video=mxcfb2:off fec.macaddr=0x96,0x75,0x99,0xea,0x19,0x26"
+CONFIG_CMDLINE="console=ttymxc0,115200 lpj=30000 root=/dev/mmcblk1p2 rootfstype=ext4 rootwait rw quiet silent=1 psplash=false maxcpus=1 consoleblank=0 vt.global_cursor_default=0 video=mxcfb0:dev=ldb,if=RGB666 video=mxcfb1:off video=mxcfb2:off fec.macaddr=0x96,0x75,0x99,0xea,0x19,0x26"
 CONFIG_CMDLINE_FORCE=y
 CONFIG_CPU_FREQ=y
 CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVE=y
