@@ -13,7 +13,7 @@ DEPENDS += "lzop-native bc-native"
 SRCBRANCH = "master"
 LOCALVERSION = "master"
 SRC_URI = "git://github.com/spikynavin/linux-imx.git;protocol=git;branch=${SRCBRANCH}"
-SRCREV = "dbc373bc4c19940a8b20cde08dfe1890923b7c16"
+SRCREV = "0288f8c472b3661b2e8e439f305b75db9a3d453c"
 
 SRC_URI += "file://defconfig"
 #SRC_URI += " \
