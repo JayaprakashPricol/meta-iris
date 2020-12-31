@@ -7,7 +7,7 @@ LICENSE = "CLOSED"
 DEPENDS += "qtbase"
 
 SRC_URI = "git://github.com/spikynavin/qtcluster.git;branch=12inch"
-SRCREV = "e49972383eac4706f1c6aa63fc43f91ef0388d46"
+SRCREV = "2cbbc5e23f21068898935b834e91009e44b743d5"
 
 S = "${WORKDIR}/git"
 
