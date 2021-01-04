@@ -10,10 +10,10 @@ require recipes-kernel/linux/linux-imx.inc
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "master"
-LOCALVERSION = "master"
+SRCBRANCH = "iris-imx-production"
+LOCALVERSION = "iris-imx-production" # Available branches iris-imx-debug, iris-imx-mfg
 SRC_URI = "git://github.com/spikynavin/linux-imx.git;protocol=git;branch=${SRCBRANCH}"
-SRCREV = "0288f8c472b3661b2e8e439f305b75db9a3d453c"
+SRCREV = "43f50a6fe01507c5fe8ef1f363f6a54a5686b0cc"
 
 SRC_URI += "file://defconfig"
 #SRC_URI += " \

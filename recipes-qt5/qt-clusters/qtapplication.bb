@@ -1,5 +1,5 @@
-SUMMARY = "Qt Simple Calculator Application Recipe"
-DESCRIPTION = "This recipe builds a Qt project for a simple calculator application."
+SUMMARY = "Qt Simple Automotive Cluster Application Recipe"
+DESCRIPTION = "This recipe builds a Qt project for a simple automotive cluster application."
 #LICENSE = "MIT"
 LICENSE = "CLOSED"
 #LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
