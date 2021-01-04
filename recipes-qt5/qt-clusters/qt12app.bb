@@ -7,7 +7,7 @@ LICENSE = "CLOSED"
 DEPENDS += "qtbase"
 
 SRC_URI = "git://github.com/spikynavin/qtcluster.git;branch=12inch"
-SRCREV = "2cbbc5e23f21068898935b834e91009e44b743d5"
+SRCREV = "98de9d84107cf709d16ce1f9d999d1931831fa98"
 
 S = "${WORKDIR}/git"
 
@@ -17,5 +17,6 @@ do_install_append() {
 }
 
 FILES_${PN} += "/usr/bin/12inch-cluster"
+INHIBIT_PACKAGE_STRIP = "1"
 
 inherit qmake5
