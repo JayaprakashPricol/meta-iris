@@ -1,0 +1,34 @@
+#!/bin/sh
+
+NAME=Wifiapd
+
+set -e
+
+case "$1" in
+    start)
+        echo -n "Starting $NAME: "
+        insmod /lib/modules/mlan.ko
+        insmod /lib/modules/sd8801.ko
+        ifconfig eth0 up
+        ifconfig mlan0 up
+        ;;
+    stop)
+        echo -n "Stopping $NAME: "
+        ifdown mlan0
+        ifconfig eth0 down
+        ifconfig mlan0 down
+        rmmod sd8xxx
+        rmmod mlan
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|reload}"
+        exit 1
+        ;;
+esac
+
+exit 0
+
