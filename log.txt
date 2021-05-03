@@ -1,0 +1,41 @@
+  *-cpu:0
+       description: CPU
+       product: Intel(R) Core(TM)2 Duo CPU     E8300  @ 2.83GHz
+       vendor: Intel Corp.
+       physical id: 4
+       bus info: cpu@0
+       version: 6.7.6
+       serial: 0001-0676-0000-0000-0000-0000
+       slot: CPU 1
+       size: 2833MHz
+       capacity: 2833MHz
+       width: 64 bits
+       clock: 333MHz
+       capabilities: x86-64 boot fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx constant_tsc arch_perfmon pebs bts aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 lahf_lm tpr_shadow vnmi flexpriority dtherm
+       configuration: cores=2 enabledcores=2 id=0 threads=2
+     *-logicalcpu:0
+          description: Logical CPU
+          physical id: 0.1
+          width: 64 bits
+          capabilities: logical
+     *-logicalcpu:1
+          description: Logical CPU
+          physical id: 0.2
+          width: 64 bits
+          capabilities: logical
+  *-cpu:1
+       physical id: 1
+       bus info: cpu@1
+       version: 6.7.6
+       serial: 0001-0676-0000-0000-0000-0000
+       size: 2850MHz
+       capabilities: vmx ht
+       configuration: id=0
+     *-logicalcpu:0
+          description: Logical CPU
+          physical id: 0.1
+          capabilities: logical
+     *-logicalcpu:1
+          description: Logical CPU
+          physical id: 0.2
+          capabilities: logical
